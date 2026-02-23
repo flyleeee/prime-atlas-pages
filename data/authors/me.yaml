@@ -42,7 +42,7 @@ interests:
   - "Bayesian LLMs"
   - "Trustworthy AI"
 education:
-  - degree: "PhD Computer Science"
+  - degree: "Ph.D. Computer Science"
     institution: "Rutgers University"
     start: "2026-09-01"
     end: 
@@ -51,11 +51,11 @@ education:
     #   text: "Download dissertation"
     #   url: "/resume.pdf"
     #   icon: "hero/arrow-down-tray"
-  - degree: "BE Computer Science"
+  - degree: "B.E. Computer Science"
     institution: "Huazhong University of Science and Technology"
     start: "2019-09-01"
     end: "2024-05-31"
-    description: |2- 
+    summary: |2- 
       Student at The Experimental Class of Computer Excellence Program
 experience:
   # - role: "Senior AI Research Scientist"
