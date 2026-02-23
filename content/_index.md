@@ -80,9 +80,9 @@ sections:
     design:
       view: card
   - block: collection
-    id: news
+    id: blogs
     content:
-      title: Recent News
+      title: Blogs
       subtitle: ''
       text: ''
       # Page type to display. E.g. post, talk, publication...
