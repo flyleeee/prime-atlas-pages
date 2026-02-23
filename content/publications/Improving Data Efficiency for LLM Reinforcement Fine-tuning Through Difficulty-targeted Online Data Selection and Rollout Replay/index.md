@@ -25,7 +25,7 @@ url_source: ""
 url_video: ""
 title: "Improving Data Efficiency for LLM Reinforcement Fine-tuning Through Difficulty-targeted Online Data Selection and Rollout Replay"
 doi: ""
-featured: true
+featured: false
 tags:
   - RL Fine-tuing
   - Data Selection
@@ -38,6 +38,6 @@ publishDate: 2025-06-10T00:00:00Z
 url_poster: 
 url_code: 
 links:
-- type: arxiv
+- name: arxiv
   url: https://arxiv.org/abs/2506.05316
 ---
