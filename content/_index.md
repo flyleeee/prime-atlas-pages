@@ -42,11 +42,9 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+        I aim to enhance the reasoning capabilities of LLMs through efficient and streamlined methodologies. I also leverage Bayesian approaches to improve LLM trustworthiness and reliability.
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
-
-        Please reach out to collaborate 😃
+        Please feel free to reach out—I’m always open to collaboration! 😃
     design:
       columns: '1'
   - block: collection
@@ -70,15 +68,15 @@ sections:
         exclude_featured: false
     design:
       view: citation
-  - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - events
-    design:
-      view: card
+  # - block: collection
+  #   id: talks
+  #   content:
+  #     title: Recent & Upcoming Talks
+  #     filters:
+  #       folders:
+  #         - events
+  #   design:
+  #     view: card
   - block: collection
     id: blogs
     content:
