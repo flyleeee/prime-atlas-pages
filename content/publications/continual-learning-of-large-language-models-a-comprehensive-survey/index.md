@@ -24,10 +24,9 @@ tags:
   - Large Language Models
   - Continual Learning
 featured: false
-hugoblox:
-  ids:
-    arxiv: ""
 links:
+  - type: ACM
+    url: "https://dl.acm.org/doi/full/10.1145/3735633"
   - type: pdf
     url: "https://dl.acm.org/doi/epdf/10.1145/3735633"
 image:
