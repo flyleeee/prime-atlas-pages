@@ -1,7 +1,7 @@
 hugoblox:
   schema: "2.0"
   identity:
-    name: Yibin Wang
+    name: Yibin Wang 王怡彬
     type: person
     tagline: Incoming Ph.D. student | Rutgers University
     description: Yibin Wang is an incoming Ph.D. student in the Rutgers University. His research interests focus on LLMs and RL.
