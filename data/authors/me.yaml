@@ -12,7 +12,7 @@ name:
 #   - "PhD"
 #   - "MIEEE"
 status:
-  icon: "☕️"
+  icon: "😴"
 role: "Incoming Ph.D. student"
 bio: "I am an incoming Ph.D. student in the [Computer Science Department at Rutgers University](https://www.cs.rutgers.edu/). I received my Bachelor's degree at Huazhong University of Science and Technology in 2024. 
 
@@ -35,8 +35,8 @@ links:
     url: "https://www.linkedin.com/in/yibin-wang-1979b5274/"
   - icon: "academicons/google-scholar"
     url: "https://scholar.google.com/citations?user=FZKXya0AAAAJ"
-  - icon: "academicons/orcid"
-    url: "https://orcid.org/0000-0001-6099-2628"
+  # - icon: "academicons/orcid"
+  #   url: "https://orcid.org/0000-0001-6099-2628"
 interests:
   - "LLM thinking"
   - "Bayesian LLMs"

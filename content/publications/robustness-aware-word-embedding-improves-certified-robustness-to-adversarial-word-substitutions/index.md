@@ -17,7 +17,8 @@ abstract: Natural Language Processing (NLP) models have gained great success on
   unseen substitutions.
 slides: ""
 url_pdf: https://aclanthology.org/2023.findings-acl.42.pdf
-publication_types: ['paper-conference']
+publication_types:
+  - paper-conference
 authors:
   - me
   - Yichen Yang
@@ -32,7 +33,8 @@ url_project: ""
 publication_short: Findings of ACL 2023
 url_source: ""
 url_video: ""
-title: Robustness-Aware Word Embedding Improves Certified Robustness to Adversarial Word Substitutions
+title: Robustness-Aware Word Embedding Improves Certified Robustness to
+  Adversarial Word Substitutions
 doi: ""
 featured: true
 tags:
@@ -50,6 +52,8 @@ publishDate: 2023-05-06T00:00:00Z
 url_poster: ""
 url_code: https://github.com/JHL-HUST/EIBC-IBP
 links:
-- name: ACL Anthology
-  url: https://aclanthology.org/2023.findings-acl.42/
+  - name: ACL Anthology
+    url: https://aclanthology.org/2023.findings-acl.42/
+summary: Findings of ACL 2023
+
 ---
