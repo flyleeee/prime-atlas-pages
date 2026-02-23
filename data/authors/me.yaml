@@ -8,9 +8,9 @@ name:
   alternate: ""
   pronunciation: ""
   pronouns: "he/him"
-postnominals:
-  - "PhD"
-  - "MIEEE"
+# postnominals:
+#   - "PhD"
+#   - "MIEEE"
 status:
   icon: "☕️"
 role: "Incoming Ph.D. student"
@@ -45,7 +45,7 @@ education:
   - degree: "Ph.D. Computer Science"
     institution: "Rutgers University"
     start: "2026-09-01"
-    end: 
+    end: "Present"
     # summary: "Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.\n"
     # button:
     #   text: "Download dissertation"

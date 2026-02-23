@@ -26,10 +26,10 @@ authors:
 author_notes:
   - Equal contribution
   - Equal contribution
-publication: In *Findings of ACL 2023*
+publication: Findings of ACL 2023
 url_dataset: ""
 url_project: ""
-publication_short: In *Findings of ACL 2023*
+publication_short: Findings of ACL 2023
 url_source: ""
 url_video: ""
 title: Robustness-Aware Word Embedding Improves Certified Robustness to Adversarial Word Substitutions
