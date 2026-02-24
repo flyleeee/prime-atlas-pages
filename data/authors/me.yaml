@@ -74,21 +74,22 @@ experience:
   - role: Research Intern
     org: University of Illinois Urbana-Champaign (UIUC)
     url: 'https://illinois.edu/'
-    start: '2024-06-15'
+    start: '2024-06'
+    end: '2025-05'
     summary: "Advisor: [Huan Zhang](http://www.huan-zhang.com/)"
 
   - role: Remote Research Intern
     org: Rutgers University
     org_url: 'https://www.rutgers.edu/'
-    start: '2023-09-01'
-    end: '2024-06-15'
+    start: '2023-09'
+    end: '2024-06'
     summary: "Advisor: [Hao Wang](http://www.wanghao.in/)"
 
   - role: Research Intern
-    org: HUST, [John Hopcroft Lab for Data Science](http://mathcenter.hust.edu.cn/Research_Groups/John_Hopcroft_Lab_for_Data_Science.htm)
+    org: HUST, John Hopcroft Lab for Data Science
     org_url: 'http://mathcenter.hust.edu.cn/Research_Groups/John_Hopcroft_Lab_for_Data_Science.htm'
-    start: '2021-09-01'
-    end: '2023-06-15'
+    start: '2021-09'
+    end: '2023-06'
     summary: "Advisor: [Kun He](https://scholar.google.com/citations?user=YTQnGJsAAAAJ)"
 
 # skills:
