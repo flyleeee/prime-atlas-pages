@@ -278,6 +278,14 @@ img[src*="authors/me"] {
   box-shadow: 0 10px 28px rgba(20, 20, 20, 0.18);
 }
 
+.resume-biography .md\:col-span-8 > .mb-12 > .flex:has(h2) {
+  display: none !important;
+}
+
+.resume-biography .md\:col-span-8 > .mb-16:has(> .grid) {
+  display: none !important;
+}
+
 @media (min-width: 1024px) {
   main section,
   .home-section {
