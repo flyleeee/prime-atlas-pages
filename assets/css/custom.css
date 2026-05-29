@@ -90,6 +90,20 @@ a:hover {
   margin-top: 0.25rem;
 }
 
+.hb-attachment-link,
+a[class*="bg-white"],
+button[class*="bg-white"] {
+  background: color-mix(in srgb, var(--atlas-surface-muted) 88%, var(--atlas-bg)) !important;
+  border-color: var(--atlas-line-strong) !important;
+  color: var(--atlas-ink) !important;
+}
+
+.hb-attachment-link:hover,
+a[class*="bg-white"]:hover,
+button[class*="bg-white"]:hover {
+  background: color-mix(in srgb, var(--atlas-surface-muted) 96%, var(--atlas-bg)) !important;
+}
+
 .atlas-featured-card {
   border: 1px solid var(--atlas-line);
   border-radius: 8px;
@@ -235,6 +249,15 @@ main section:nth-of-type(2) .prose {
 #research .prose p,
 main section:nth-of-type(2) .prose p {
   max-width: 72rem;
+}
+
+.resume-biography .bio-text,
+.resume-biography .bio-text p,
+#research .prose,
+#research .prose p,
+#misc .prose,
+#misc .prose li {
+  color: color-mix(in srgb, var(--atlas-ink) 82%, var(--atlas-muted)) !important;
 }
 
 .prose,

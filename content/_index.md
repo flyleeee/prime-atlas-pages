@@ -109,7 +109,7 @@ sections:
       title: Misc
       subtitle: ''
       text: |-
-        - My avatar is based on [Osage-chan, created by inabakumori](https://www.youtube.com/watch?v=STBoCK69vVQ).
+        - My avatar is based on [Osage-chan by Nukunuku Nigirimeshi (@NKNK_NGRMS)](https://mangadex.org/title/b705aa33-4720-4ce0-8249-5cc1852159e4/osage-chan-4koma).
         - I am deeply into bubble tea, coffee, and wowaka.
     design:
       columns: '1'
