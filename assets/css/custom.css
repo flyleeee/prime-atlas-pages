@@ -1,0 +1,162 @@
+/* Compact, graphite-toned polish for the academic CV homepage. */
+:root {
+  --atlas-bg: #f1f0ed;
+  --atlas-surface: #ffffff;
+  --atlas-surface-muted: #e7e5e0;
+  --atlas-ink: #151515;
+  --atlas-muted: #5e5e5a;
+  --atlas-line: rgba(22, 22, 22, 0.12);
+  --atlas-line-strong: rgba(22, 22, 22, 0.2);
+  --atlas-shadow: 0 16px 44px rgba(20, 20, 20, 0.08);
+}
+
+:root.dark,
+.dark {
+  --atlas-bg: #0f0f10;
+  --atlas-surface: #19191a;
+  --atlas-surface-muted: #242425;
+  --atlas-ink: #eeeeeb;
+  --atlas-muted: #b6b4ad;
+  --atlas-line: rgba(238, 238, 235, 0.13);
+  --atlas-line-strong: rgba(238, 238, 235, 0.22);
+  --atlas-shadow: 0 16px 44px rgba(0, 0, 0, 0.32);
+}
+
+html {
+  background: var(--atlas-bg);
+}
+
+body {
+  background:
+    radial-gradient(circle at 18% 0%, rgba(80, 80, 78, 0.1), transparent 28rem),
+    linear-gradient(180deg, var(--atlas-bg), var(--atlas-bg));
+  color: var(--atlas-ink);
+  letter-spacing: 0;
+}
+
+a {
+  text-decoration-color: var(--atlas-line-strong);
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  text-decoration-color: currentColor;
+}
+
+header,
+nav {
+  border-bottom-color: var(--atlas-line);
+  background-color: color-mix(in srgb, var(--atlas-bg) 88%, transparent);
+  backdrop-filter: blur(14px);
+}
+
+main section,
+.home-section {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+main section:first-of-type,
+.home-section:first-of-type {
+  padding-top: 2.25rem !important;
+  padding-bottom: 2.75rem !important;
+}
+
+.prose,
+.article-style {
+  color: var(--atlas-ink);
+}
+
+.prose :where(p, li, blockquote),
+.article-style :where(p, li, blockquote) {
+  color: var(--atlas-muted);
+}
+
+.prose :where(h1, h2, h3),
+.article-style :where(h1, h2, h3) {
+  color: var(--atlas-ink);
+}
+
+.prose blockquote,
+.article-style blockquote {
+  border-left-color: var(--atlas-line-strong);
+  background: color-mix(in srgb, var(--atlas-surface-muted) 52%, transparent);
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+}
+
+.card,
+article,
+[class*="card"],
+[class*="Card"] {
+  border-color: var(--atlas-line) !important;
+}
+
+article,
+.card,
+[class*="article-grid"] > *,
+[class*="view-card"] > * {
+  background: color-mix(in srgb, var(--atlas-surface) 93%, transparent);
+  box-shadow: var(--atlas-shadow);
+}
+
+img.avatar,
+img[alt="avatar"],
+img[src*="authors/me"] {
+  border: 1px solid var(--atlas-line-strong);
+  box-shadow: 0 10px 28px rgba(20, 20, 20, 0.18);
+}
+
+@media (min-width: 1024px) {
+  main section,
+  .home-section {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+
+  h1 {
+    line-height: 1.05;
+  }
+
+  h2 {
+    margin-bottom: 1rem !important;
+  }
+
+  .prose p,
+  .article-style p {
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container,
+  .max-w-6xl,
+  .max-w-7xl,
+  .max-w-screen-xl,
+  .max-w-screen-2xl {
+    max-width: min(92rem, calc(100vw - 5rem)) !important;
+  }
+
+  main {
+    font-size: 0.97rem;
+  }
+
+  main section,
+  .home-section {
+    padding-top: 2.15rem !important;
+    padding-bottom: 2.15rem !important;
+  }
+
+  main [class*="grid"] {
+    row-gap: 1.25rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  main section,
+  .home-section {
+    padding-top: 2.25rem !important;
+    padding-bottom: 2.25rem !important;
+  }
+}
