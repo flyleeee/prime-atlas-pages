@@ -15,10 +15,6 @@ sections:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
       text: ''
-      # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download CV
-        url: uploads/resume.pdf
       headings:
         about: ''
         education: ''
@@ -38,6 +34,7 @@ sections:
         size: small # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
   - block: markdown
+    id: research
     content:
       title: '📚 My Research'
       subtitle: ''
@@ -56,8 +53,7 @@ sections:
           - publications
         featured_only: true
     design:
-      view: article-grid
-      columns: 3
+      view: citation
   - block: collection
     content:
       title: Recent Publications

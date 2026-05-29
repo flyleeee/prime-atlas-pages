@@ -1,6 +1,7 @@
 schema: "hugoblox/author/v1"
 slug: "me"
 is_owner: true
+highlight_name: true
 name:
   display: "Yibin Wang"
   given: "Yibin"
@@ -35,6 +36,9 @@ links:
     url: "https://www.linkedin.com/in/yibin-wang-1979b5274/"
   - icon: "academicons/google-scholar"
     url: "https://scholar.google.com/citations?user=FZKXya0AAAAJ"
+  - icon: "arrow-down-tray"
+    url: "/uploads/resume.pdf"
+    label: "Download CV"
   # - icon: "academicons/orcid"
   #   url: "https://orcid.org/0000-0001-6099-2628"
 interests:

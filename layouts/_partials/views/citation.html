@@ -1,0 +1,18 @@
+{{- $item := . -}}
+{{- with .item -}}
+  {{- $item = . -}}
+{{- end -}}
+
+<div class="pub-list-item view-citation atlas-publication-line">
+  <a class="atlas-publication-title" href="{{ $item.RelPermalink }}">{{ $item.Title }}</a><span>, </span>
+  <span class="article-metadata li-cite-author atlas-publication-authors">
+    {{- partial "page_metadata_authors" $item -}}
+  </span>
+  {{- $venue := $item.Params.publication_short | default $item.Params.publication -}}
+  {{- with $venue -}}
+    <span>, </span><strong class="atlas-publication-venue">{{ . | markdownify }}</strong>
+  {{- end -}}
+  <div class="btn-links atlas-publication-links">
+    {{- partial "page_links" (dict "page" $item "is_list" 1) -}}
+  </div>
+</div>

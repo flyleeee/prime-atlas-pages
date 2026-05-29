@@ -1,0 +1,26 @@
+{{- $authors := .Params.authors -}}
+{{- if $authors -}}
+  {{- range $index, $value := $authors -}}
+    {{- $author_key := printf "%s" $value -}}
+    {{- $profile := index site.Data.authors $author_key -}}
+    {{- $display_name := $author_key -}}
+    {{- $highlight := false -}}
+    {{- with $profile -}}
+      {{- with .name.display -}}
+        {{- $display_name = . -}}
+      {{- end -}}
+      {{- $highlight = (.highlight_name | default false) -}}
+    {{- end -}}
+    {{- if or $highlight (eq $author_key "me") (eq $display_name "Yibin Wang") (eq $display_name "Yibin Wang 王怡彬") -}}
+      {{- $highlight = true -}}
+    {{- end -}}
+    {{ if gt $index 0 }}, {{ end -}}
+    <span class="atlas-author{{ if $highlight }} atlas-author-self{{ end }}">
+      {{- if $highlight -}}
+        <strong>{{ $display_name | markdownify }}</strong>
+      {{- else -}}
+        {{- $display_name | markdownify -}}
+      {{- end -}}
+    </span>
+  {{- end -}}
+{{- end -}}

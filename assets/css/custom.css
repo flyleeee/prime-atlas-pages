@@ -43,6 +43,30 @@ a:hover {
   text-decoration-color: currentColor;
 }
 
+.atlas-author-self strong {
+  color: var(--atlas-ink);
+  font-weight: 700;
+}
+
+.atlas-publication-line {
+  margin-bottom: 0.8rem;
+  line-height: 1.48;
+}
+
+.atlas-publication-title {
+  color: var(--atlas-ink);
+  font-weight: 500;
+}
+
+.atlas-publication-venue {
+  color: var(--atlas-ink);
+  font-weight: 700;
+}
+
+.atlas-publication-links {
+  margin-top: 0.25rem;
+}
+
 header,
 nav {
   border-bottom-color: var(--atlas-line);
@@ -60,6 +84,31 @@ main section:first-of-type,
 .home-section:first-of-type {
   padding-top: 2.25rem !important;
   padding-bottom: 2.75rem !important;
+}
+
+#research,
+main section:nth-of-type(2) {
+  padding-top: 1.75rem !important;
+  padding-bottom: 1.75rem !important;
+}
+
+#research .container,
+#research .prose,
+#research .max-w-prose,
+main section:nth-of-type(2) .max-w-prose,
+main section:nth-of-type(2) .container,
+main section:nth-of-type(2) .prose {
+  max-width: min(82rem, calc(100vw - 3rem)) !important;
+}
+
+#research .prose,
+main section:nth-of-type(2) .prose {
+  width: 100%;
+}
+
+#research .prose p,
+main section:nth-of-type(2) .prose p {
+  max-width: 72rem;
 }
 
 .prose,
@@ -126,6 +175,29 @@ img[src*="authors/me"] {
   .article-style p {
     margin-top: 0.7rem;
     margin-bottom: 0.7rem;
+  }
+
+  .resume-biography {
+    max-width: min(96rem, calc(100vw - 4rem));
+    gap: 2.25rem !important;
+  }
+
+  .resume-biography .flex-auto {
+    flex: 1 1 0;
+    max-width: min(74rem, calc(100vw - 18rem)) !important;
+  }
+
+  .resume-biography .flex-auto > .grid {
+    grid-template-columns: minmax(12rem, 0.75fr) minmax(28rem, 1.25fr) !important;
+  }
+
+  .resume-biography .description {
+    min-width: 0;
+  }
+
+  .resume-biography .description .course,
+  .resume-biography .description .text-sm {
+    white-space: nowrap;
   }
 }
 
