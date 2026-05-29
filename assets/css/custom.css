@@ -29,9 +29,7 @@ html {
 }
 
 body {
-  background:
-    radial-gradient(circle at 18% 0%, color-mix(in srgb, var(--atlas-avatar-gray) 32%, transparent), transparent 28rem),
-    linear-gradient(180deg, var(--atlas-bg), var(--atlas-bg));
+  background: var(--atlas-bg);
   color: var(--atlas-ink);
   letter-spacing: 0;
 }
@@ -192,8 +190,14 @@ a:hover {
 header,
 nav {
   border-bottom-color: var(--atlas-line);
-  background-color: color-mix(in srgb, var(--atlas-bg) 88%, transparent);
-  backdrop-filter: blur(14px);
+  background: var(--atlas-bg) !important;
+  backdrop-filter: none;
+}
+
+.page-header,
+#site-header,
+.navbar {
+  background: var(--atlas-bg) !important;
 }
 
 main section,
