@@ -8,19 +8,18 @@
   {{- $link = $item.Params.external_link -}}
   {{- $target = "target=\"_blank\" rel=\"noopener\"" -}}
 {{- end -}}
-{{- $resource := partial "functions/get_featured_image.html" $item -}}
-{{- $anchor := $item.Params.image.focal_point | default "Center" -}}
+{{- $resource := "" -}}
+{{- with $item.Params.image.filename -}}
+  {{- $resource = $item.Resources.GetMatch . -}}
+{{- end -}}
+{{- if not $resource -}}
+  {{- $resource = $item.Resources.GetMatch "featured*" -}}
+{{- end -}}
 
 <article class="atlas-featured-card">
   {{- with $resource -}}
-    {{- $can_process := and (reflect.IsImageResourceProcessable .) (ne .MediaType.SubType "gif") -}}
     <a class="atlas-featured-media" href="{{ $link }}" {{ $target | safeHTMLAttr }}>
-      {{- if $can_process -}}
-        {{- $image := .Fill (printf "800x450 %s" $anchor) -}}
-        <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="">
-      {{- else -}}
-        <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="">
-      {{- end -}}
+      <img src="{{ .RelPermalink }}" alt="">
     </a>
   {{- end -}}
 
