@@ -1,24 +1,26 @@
 /* Compact, graphite-toned polish for the academic CV homepage. */
 :root {
-  --atlas-bg: #f1f0ed;
+  --atlas-avatar-gray: #b2b2b2;
+  --atlas-bg: color-mix(in srgb, var(--atlas-avatar-gray) 42%, #f4f3f0);
   --atlas-surface: #ffffff;
-  --atlas-surface-muted: #e7e5e0;
+  --atlas-surface-muted: color-mix(in srgb, var(--atlas-avatar-gray) 58%, #ecebe7);
   --atlas-ink: #151515;
   --atlas-muted: #5e5e5a;
-  --atlas-line: rgba(22, 22, 22, 0.12);
-  --atlas-line-strong: rgba(22, 22, 22, 0.2);
+  --atlas-line: color-mix(in srgb, var(--atlas-avatar-gray) 44%, rgba(22, 22, 22, 0.12));
+  --atlas-line-strong: color-mix(in srgb, var(--atlas-avatar-gray) 34%, rgba(22, 22, 22, 0.28));
   --atlas-shadow: 0 16px 44px rgba(20, 20, 20, 0.08);
 }
 
 :root.dark,
 .dark {
-  --atlas-bg: #0f0f10;
-  --atlas-surface: #19191a;
-  --atlas-surface-muted: #242425;
+  --atlas-avatar-gray: #b2b2b2;
+  --atlas-bg: color-mix(in srgb, #0f0f10 82%, var(--atlas-avatar-gray));
+  --atlas-surface: color-mix(in srgb, #19191a 86%, var(--atlas-avatar-gray));
+  --atlas-surface-muted: color-mix(in srgb, #242425 78%, var(--atlas-avatar-gray));
   --atlas-ink: #eeeeeb;
-  --atlas-muted: #b6b4ad;
-  --atlas-line: rgba(238, 238, 235, 0.13);
-  --atlas-line-strong: rgba(238, 238, 235, 0.22);
+  --atlas-muted: color-mix(in srgb, var(--atlas-avatar-gray) 72%, #eeeeeb);
+  --atlas-line: color-mix(in srgb, var(--atlas-avatar-gray) 22%, rgba(238, 238, 235, 0.13));
+  --atlas-line-strong: color-mix(in srgb, var(--atlas-avatar-gray) 28%, rgba(238, 238, 235, 0.24));
   --atlas-shadow: 0 16px 44px rgba(0, 0, 0, 0.32);
 }
 
@@ -28,7 +30,7 @@ html {
 
 body {
   background:
-    radial-gradient(circle at 18% 0%, rgba(80, 80, 78, 0.1), transparent 28rem),
+    radial-gradient(circle at 18% 0%, color-mix(in srgb, var(--atlas-avatar-gray) 32%, transparent), transparent 28rem),
     linear-gradient(180deg, var(--atlas-bg), var(--atlas-bg));
   color: var(--atlas-ink);
   letter-spacing: 0;
@@ -114,7 +116,7 @@ a:hover {
 .atlas-featured-media {
   display: block;
   aspect-ratio: 16 / 9;
-  background: var(--atlas-surface-muted);
+  background: var(--atlas-avatar-gray);
   overflow: hidden;
 }
 

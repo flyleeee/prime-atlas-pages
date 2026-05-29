@@ -10,16 +10,16 @@ hugoblox:
     pack: default
     colors:
       primary: "#2f2f2f"
-      secondary: "#686864"
+      secondary: "#b2b2b2"
       neutral: "#1f1f1f"
     surfaces:
-      background: "#f1f0ed"
+      background: "#d2d1ce"
       foreground: "#151515"
       header:
-        background: "#f1f0ed"
+        background: "#d2d1ce"
         foreground: "#151515"
       footer:
-        background: "#e7e5e0"
+        background: "#b2b2b2"
         foreground: "#151515"
   typography:
     font: sans
