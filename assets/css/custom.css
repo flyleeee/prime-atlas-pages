@@ -137,6 +137,22 @@ a:hover {
   margin-top: 0.55rem;
 }
 
+.page-body,
+.page-body .max-w-prose,
+.page-body article.prose,
+.page-body h1 {
+  background: transparent !important;
+}
+
+.page-body h1 {
+  color: var(--atlas-ink);
+}
+
+.page-body .mt-16,
+.page-body .sm\:mt-20 {
+  background: transparent !important;
+}
+
 .network-icon a[href$="/uploads/resume.pdf"] svg {
   display: none;
 }
