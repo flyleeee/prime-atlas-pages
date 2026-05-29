@@ -277,7 +277,8 @@ article,
 
 img.avatar,
 img[alt="avatar"],
-img[src*="authors/me"] {
+img[src*="authors/me"],
+img[src*="/uploads/avatars/avatar-"] {
   border: 1px solid var(--atlas-line-strong);
   box-shadow: 0 10px 28px rgba(20, 20, 20, 0.18);
 }

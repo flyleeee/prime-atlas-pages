@@ -103,6 +103,16 @@ sections:
       # Reduce spacing
       spacing:
         padding: [0, 0, 0, 0]
+  - block: markdown
+    id: misc
+    content:
+      title: Misc
+      subtitle: ''
+      text: |-
+        - My avatar is based on [Osage-chan, created by inabakumori](https://www.youtube.com/watch?v=STBoCK69vVQ).
+        - I am deeply into bubble tea, coffee, and wowaka.
+    design:
+      columns: '1'
   - block: cta-card
     demo: true # Only display this section in the HugoBlox Kit demo site
     content:

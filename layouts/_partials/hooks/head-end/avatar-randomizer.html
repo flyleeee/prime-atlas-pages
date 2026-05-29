@@ -1,0 +1,17 @@
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const avatars = [
+      '/uploads/avatars/avatar-1.png',
+      '/uploads/avatars/avatar-2.png',
+      '/uploads/avatars/avatar-3.png',
+      '/uploads/avatars/avatar-4.png',
+      '/uploads/avatars/avatar-5.png',
+    ];
+    const randomIndex = Math.floor(Math.random() * avatars.length);
+    const selectedAvatar = avatars[randomIndex];
+    document.querySelectorAll('img.avatar, img[src*="/media/authors/me"]').forEach((image) => {
+      image.src = selectedAvatar;
+      image.removeAttribute('srcset');
+    });
+  });
+</script>
