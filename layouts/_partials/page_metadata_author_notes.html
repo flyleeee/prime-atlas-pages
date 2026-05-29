@@ -1,0 +1,12 @@
+{{- $notes := .Params.author_notes -}}
+{{- $first_note := "" -}}
+{{- if $notes -}}
+  {{- range $notes -}}
+    {{- if and . (not $first_note) -}}
+      {{- $first_note = . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- with $first_note -}}
+  <div class="atlas-author-notes"><sup>*</sup> {{ . }}</div>
+{{- end -}}

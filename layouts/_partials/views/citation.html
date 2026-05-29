@@ -8,6 +8,7 @@
   <div class="article-metadata li-cite-author atlas-publication-authors">
     {{- partial "page_metadata_authors" $item -}}
   </div>
+  {{- partial "page_metadata_author_notes" $item -}}
   {{- $venue := $item.Params.publication_short | default $item.Params.publication -}}
   {{- with $venue -}}
     <div class="atlas-publication-venue">{{ . | markdownify }}</div>

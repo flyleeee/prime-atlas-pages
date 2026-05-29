@@ -1,4 +1,5 @@
 {{- $authors := .Params.authors -}}
+{{- $author_notes := .Params.author_notes -}}
 {{- if $authors -}}
   {{- range $index, $value := $authors -}}
     {{- $author_key := printf "%s" $value -}}
@@ -20,6 +21,13 @@
         <strong>{{ $display_name | markdownify }}</strong>
       {{- else -}}
         {{- $display_name | markdownify -}}
+      {{- end -}}
+      {{- $note := "" -}}
+      {{- if and $author_notes (lt $index (len $author_notes)) -}}
+        {{- $note = index $author_notes $index -}}
+      {{- end -}}
+      {{- with $note -}}
+        <sup class="atlas-author-note-marker" title="{{ . }}">{{ if eq . "Equal contribution" }}*{{ else }}{{ add $index 1 }}{{ end }}</sup>
       {{- end -}}
     </span>
   {{- end -}}
