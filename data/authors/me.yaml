@@ -12,8 +12,8 @@ name:
 # postnominals:
 #   - "PhD"
 #   - "MIEEE"
-status:
-  icon: "😴"
+# status:
+#   icon: ""
 role: "Incoming Ph.D. student"
 bio: "I am an incoming Ph.D. student in the [Computer Science Department at Rutgers University](https://www.cs.rutgers.edu/). I received my Bachelor's degree at Huazhong University of Science and Technology in 2024. 
 

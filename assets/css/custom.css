@@ -49,13 +49,19 @@ a:hover {
 }
 
 .atlas-publication-line {
-  margin-bottom: 0.8rem;
-  line-height: 1.48;
+  margin-bottom: 1rem;
+  line-height: 1.42;
 }
 
 .atlas-publication-title {
   color: var(--atlas-ink);
   font-weight: 500;
+  display: inline-block;
+  margin-bottom: 0.12rem;
+}
+
+.atlas-publication-authors {
+  margin-bottom: 0.08rem;
 }
 
 .atlas-publication-venue {
@@ -178,26 +184,53 @@ img[src*="authors/me"] {
   }
 
   .resume-biography {
-    max-width: min(96rem, calc(100vw - 4rem));
-    gap: 2.25rem !important;
+    justify-content: center !important;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .resume-biography .flex-auto {
-    flex: 1 1 0;
-    max-width: min(74rem, calc(100vw - 18rem)) !important;
+    max-width: min(80rem, calc(100vw - 22rem)) !important;
   }
 
   .resume-biography .flex-auto > .grid {
-    grid-template-columns: minmax(12rem, 0.75fr) minmax(28rem, 1.25fr) !important;
+    grid-template-columns: minmax(11rem, 0.55fr) minmax(34rem, 1.45fr) !important;
   }
 
-  .resume-biography .description {
-    min-width: 0;
+  .resume-biography li:has(.description),
+  .resume-biography li:has(.course) {
+    display: grid !important;
+    grid-template-columns: 1.25rem minmax(10rem, max-content) max-content minmax(18rem, max-content);
+    column-gap: 0.75rem;
+    align-items: baseline;
   }
 
-  .resume-biography .description .course,
-  .resume-biography .description .text-sm {
+  .resume-biography li:has(.description) > svg,
+  .resume-biography li:has(.course) > svg,
+  .resume-biography li:has(.description) > i,
+  .resume-biography li:has(.course) > i {
+    grid-column: 1;
+  }
+
+  .resume-biography li:has(.description) > *:not(svg):not(i),
+  .resume-biography li:has(.course) > *:not(svg):not(i) {
+    display: contents;
+  }
+
+  .resume-biography li:has(.description) p,
+  .resume-biography li:has(.course) p,
+  .resume-biography li:has(.description) span,
+  .resume-biography li:has(.course) span,
+  .resume-biography li:has(.description) div,
+  .resume-biography li:has(.course) div {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
     white-space: nowrap;
+  }
+
+  .resume-biography li:has(.description) br,
+  .resume-biography li:has(.course) br {
+    display: none;
   }
 }
 
