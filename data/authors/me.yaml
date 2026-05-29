@@ -26,7 +26,7 @@ affiliations:
     url: "https://www.rutgers.edu/"
 links:
   - icon: "at-symbol"
-    url: "yibin|wang@gmail.com"
+    url: "mailto:yibin.wang@rutgers.edu"
     label: "E-mail Me"
   - icon: "brands/x"
     url: "https://x.com/Yibin_Wang_"
