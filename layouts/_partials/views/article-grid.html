@@ -9,8 +9,7 @@
   {{- $target = "target=\"_blank\" rel=\"noopener\"" -}}
 {{- end -}}
 {{- $resource := partial "functions/get_featured_image.html" $item -}}
-{{- $image_params := partial "functions/get_page_image_params.html" $item -}}
-{{- $anchor := $image_params.focal_point | default "Center" -}}
+{{- $anchor := $item.Params.image.focal_point | default "Center" -}}
 
 <article class="atlas-featured-card">
   {{- with $resource -}}
