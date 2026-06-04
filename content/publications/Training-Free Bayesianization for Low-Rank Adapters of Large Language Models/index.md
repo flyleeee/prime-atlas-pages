@@ -46,9 +46,9 @@ tags:
 projects: []
 date: 2024-12-10T00:00:00Z
 url_pdf: https://arxiv.org/pdf/2412.05723
-url_slides: ""
+url_slides: https://neurips.cc/media/neurips-2025/Slides/116513.pdf
 publishDate: 2024-12-10T00:00:00Z
-url_poster: https://nips.cc/media/PosterPDFs/NeurIPS%202024/95507.png?t=1731732028.1365483
+url_poster: https://neurips.cc/media/PosterPDFs/NeurIPS%202025/116513.png?t=1762625341.216618
 url_code: https://github.com/Wang-ML-Lab/bayesian-peft
 links:
   - name: arxiv

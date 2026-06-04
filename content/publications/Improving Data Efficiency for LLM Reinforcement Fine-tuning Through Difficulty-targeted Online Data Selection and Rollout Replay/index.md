@@ -35,8 +35,8 @@ date: 2025-06-10T00:00:00Z
 url_pdf: "https://arxiv.org/pdf/2506.05316"
 url_slides: ""
 publishDate: 2025-06-10T00:00:00Z
-url_poster: 
-url_code: 
+url_poster: https://neurips.cc/media/PosterPDFs/NeurIPS%202025/115452.png?t=1763510709.0547829
+url_code: https://github.com/ASTRAL-Group/data-efficient-llm-rl/
 links:
 - name: arxiv
   url: https://arxiv.org/abs/2506.05316
