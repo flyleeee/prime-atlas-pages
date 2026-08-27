@@ -3,8 +3,8 @@ hugoblox:
   identity:
     name: Yibin Wang 王怡彬
     type: person
-    tagline: Incoming Ph.D. student | Rutgers University
-    description: Yibin Wang is an incoming Ph.D. student in the Rutgers University. His research interests focus on LLMs and RL.
+    tagline: First-year Ph.D. student | Rutgers University
+    description: Yibin Wang is a first-year Ph.D. student at Rutgers University. His research interests focus on LLMs and RL.
   theme:
     mode: system
     pack: default
