@@ -74,6 +74,19 @@ sections:
   #         - events
   #   design:
   #     view: card
+  - block: markdown
+    id: teaching
+    content:
+      title: Teaching
+      subtitle: ''
+      text: |-
+        **Fall 2026 — Teaching Assistant, Rutgers University**
+
+        [CS 461: Machine Learning Principles](https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-461-machine-learning-principles)
+
+        Instructor: Bernhard Firner
+    design:
+      columns: '1'
   - block: collection
     id: blogs
     content:
