@@ -33,17 +33,6 @@ sections:
       avatar:
         size: small # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
-  - block: markdown
-    id: research
-    content:
-      title: 'My Research'
-      subtitle: ''
-      text: |-
-        I aim to enhance the reasoning capabilities of LLMs through efficient and streamlined methodologies. I also leverage Bayesian approaches to improve LLM trustworthiness and reliability.
-
-        Please feel free to reach out—I’m always open to collaboration!
-    design:
-      columns: '1'
   - block: collection
     id: papers
     content:
